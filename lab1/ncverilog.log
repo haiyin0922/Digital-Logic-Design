@@ -1,0 +1,52 @@
+ncverilog: 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Mar 11, 2018 at 13:30:16 CST
+ncverilog
+	fop.v
+	fop_tb.v
+Recompiling... reason: file './fop.v' is newer than expected.
+	expected: Sat Mar 10 20:09:37 2018
+	actual:   Sun Mar 11 13:37:06 2018
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              4       4
+		Primitives:          10       3
+		Registers:            3       3
+		Scalar wires:         2       -
+		Expanded wires:       4       1
+		Vectored wires:       2       -
+		Always blocks:        1       1
+		Initial blocks:       1       1
+		Cont. assignments:    1       1
+		Pseudo assignments:   1       1
+	Writing initial simulation snapshot: worklib.fop_tb:v
+Loading snapshot worklib.fop_tb:v .................... Done
+*Verdi3* Loading libsscore_ius141.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+time=   5,in=0000,out_G=1,out_D=1,out_B=1
+time=  10,in=0001,out_G=1,out_D=1,out_B=1
+time=  15,in=0010,out_G=1,out_D=1,out_B=1
+time=  20,in=0011,out_G=1,out_D=1,out_B=1
+time=  25,in=0100,out_G=0,out_D=0,out_B=0
+time=  30,in=0101,out_G=1,out_D=1,out_B=1
+time=  35,in=0110,out_G=0,out_D=0,out_B=0
+time=  40,in=0111,out_G=1,out_D=1,out_B=1
+time=  45,in=1000,out_G=1,out_D=1,out_B=1
+time=  50,in=1001,out_G=0,out_D=0,out_B=0
+time=  55,in=1010,out_G=0,out_D=0,out_B=0
+time=  60,in=1011,out_G=1,out_D=1,out_B=1
+time=  65,in=1100,out_G=0,out_D=0,out_B=0
+time=  70,in=1101,out_G=1,out_D=1,out_B=1
+time=  75,in=1110,out_G=0,out_D=0,out_B=0
+time=  80,in=1111,out_G=0,out_D=0,out_B=0
+Congratulations!!
+Simulation complete via $finish(1) at time 80 NS + 0
+./fop_tb.v:26         $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Mar 11, 2018 at 13:30:58 CST  (total: 00:00:42)
